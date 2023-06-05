@@ -17,8 +17,8 @@ const deleteTodo = (id) => {
 const changeStatusTodo = (todo) => {
     return axios(`${url}/update-todo/${todo._id}`, { method: 'PATCH', data: todo })
 }
-// const updateTodo = () => {
-//     return axios(`${url}/todos`, { method: 'PATCH', data: body })
-// }
+const getIntervalTodos =(timeInterval) => {
+    return axios(`${url}/todos/${timeInterval}`)
+}
 
-export { url, getAllTodos, createTodo, deleteTodo, changeStatusTodo  };
+export { url, getAllTodos, createTodo, deleteTodo, changeStatusTodo, getIntervalTodos  };
