@@ -8,6 +8,34 @@
   justify-content: space-around;
   padding: 50px;
 }
+.modal {
+  position: fixed;
+  text-align: center;
+  bottom: 0;
+  width: 700px;
+  background:cadetblue;
+  margin-left: 380px;
+  }
+  .modal.open {
+    display: block;
+    height: 50%;
+  }
+  .modal.close {
+    display: none;
+    height: 0;
+  }
+  .modal-body {
+    display: block;
+    height: 100%;
+    padding: 100px;
+  }
+.modal-text {
+  width: 500px;
+  height: 40px;
+}
+.modal-btn {
+  height: 45px;
+}
 .content {
   display: flex;
   flex-direction: column;

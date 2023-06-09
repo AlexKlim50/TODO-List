@@ -14,11 +14,11 @@ const deleteTodo = (id) => {
     return axios(`${url}/todo/${id}`, { method: 'DELETE'})
 }
 
-const changeStatusTodo = (todo) => {
+const changeTodo = (todo) => {
     return axios(`${url}/update-todo/${todo._id}`, { method: 'PATCH', data: todo })
 }
 const getIntervalTodos =(timeInterval) => {
     return axios(`${url}/todos/${timeInterval}`)
 }
 
-export { url, getAllTodos, createTodo, deleteTodo, changeStatusTodo, getIntervalTodos  };
+export { url, getAllTodos, createTodo, deleteTodo, changeTodo, getIntervalTodos  };

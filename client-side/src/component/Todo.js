@@ -1,5 +1,4 @@
 const Todo = (props) => {
-
     function addZero(d) {
         return (d < 10) ? '0' + d : d;
     }
@@ -13,6 +12,8 @@ const Todo = (props) => {
         )
     }
 
+    
+
     return (
         <div className="task">
             <div className="taskTitle">
@@ -22,11 +23,11 @@ const Todo = (props) => {
                 <div>
                     {todoDate()}
                 </div>
-                <button onClick={() => props.onUpdateTodo(props.task)}>
+                <button onClick={() => props.onUpdateStatusTodo(props.task)}>
                     {props.task.status}
                 </button>
             </div>
-            <button>Редактировать</button>
+            <button onClick={() => props.setModal({ modal: true, todo: props.task})} >Редактировать</button>
             <button onClick={() => props.onDeleteTodo(props.task._id)}>Удалить</button>
         </div>
     )

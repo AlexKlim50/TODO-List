@@ -4,7 +4,6 @@ const Content = (props) => {
 
     return (
         <div className="content">
-
             <div className="contentTask">
                 <input type="text" value={props.value} onChange={(e) => props.setValue(e.target.value)} />
                 <button onClick={props.onCreateTodo}> добавление новой задачи</button>
@@ -12,7 +11,7 @@ const Content = (props) => {
             <div className="textTask">
                 {
                     props.todos.map((obj) => {
-                            return <Todo task={obj} key={obj._id} onDeleteTodo={props.onDeleteTodo} onUpdateTodo={props.onUpdateTodo} />
+                        return <Todo task={obj} key={obj._id} onDeleteTodo={props.onDeleteTodo} onUpdateStatusTodo={props.onUpdateStatusTodo} setModal={props.setModal} modal={props.modal} />
                     })
                 }
             </div>
