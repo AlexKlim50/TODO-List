@@ -5,8 +5,8 @@ const Content = (props) => {
     return (
         <div className="content">
             <div className="contentTask">
-                <input type="text" value={props.value} onChange={(e) => props.setValue(e.target.value)} />
-                <button onClick={props.onCreateTodo}> добавление новой задачи</button>
+                <input className="inp-content" type="text" value={props.value} onChange={(e) => props.setValue(e.target.value)} />
+                <button className="btn-contentTask" onClick={props.onCreateTodo}> добавление новой задачи</button>
             </div>
             <div className="textTask">
                 {
@@ -16,8 +16,8 @@ const Content = (props) => {
                 }
             </div>
             <div className="contentTask">
-                <input type="text" value={props.value} onChange={(e) => props.setValue(e.target.value)} />
-                <button onClick={props.onCreateTodo} > добавление новой задачи</button>
+                <input className="inp-content" type="text" value={props.value} onChange={(e) => props.setValue(e.target.value)} />
+                <button className="btn-contentTask" onClick={props.onCreateTodo} > добавление новой задачи</button>
             </div>
         </div>
     )

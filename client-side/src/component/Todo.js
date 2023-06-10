@@ -23,12 +23,12 @@ const Todo = (props) => {
                 <div>
                     {todoDate()}
                 </div>
-                <button onClick={() => props.onUpdateStatusTodo(props.task)}>
+                <button className="task-btn-status" onClick={() => props.onUpdateStatusTodo(props.task)}>
                     {props.task.status}
                 </button>
             </div>
-            <button onClick={() => props.setModal({ modal: true, todo: props.task})} >Редактировать</button>
-            <button onClick={() => props.onDeleteTodo(props.task._id)}>Удалить</button>
+            <button  className="task-btn-update"onClick={() => props.setModal({ modal: true, todo: props.task})} >Редактировать</button>
+            <button className="task-btn-delete" onClick={() => props.onDeleteTodo(props.task._id)}>Удалить</button>
         </div>
     )
 }

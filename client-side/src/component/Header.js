@@ -1,4 +1,4 @@
-import react from 'react'
+
 
 const Header = (props) => {
     return (
@@ -6,18 +6,18 @@ const Header = (props) => {
             <div className='headerText'>
                 <h1>Список задач</h1>
             </div>
-            <div className='btn'>
+            <div className='header-btn'>
                 <div className="btn-all">
-                    <button onClick={() => props.onTimeIntervalTodos()}>Все</button>
+                    <button className="btn-all-title" onClick={() => props.onTimeIntervalTodos()}>Все</button>
                 </div>
                 <div className="btn-day">
-                    <button onClick={() => props.onTimeIntervalTodos('day')}>День</button>
+                    <button className="btn-day-title"  onClick={() => props.onTimeIntervalTodos('day')}>День</button>
                 </div>
                 <div className="btn-week">
-                    <button onClick={() => props.onTimeIntervalTodos('week')}>Неделя</button>
+                    <button className="btn-week-title"  onClick={() => props.onTimeIntervalTodos('week')}>Неделя</button>
                 </div>
                 <div className="btn-month">
-                    <button onClick={() => props.onTimeIntervalTodos('month')}>Месяц</button>
+                    <button className="btn-month-title"  onClick={() => props.onTimeIntervalTodos('month')}>Месяц</button>
                 </div>
             </div>
         </div>

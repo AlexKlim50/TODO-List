@@ -1,40 +1,80 @@
 
+.App {
+  background: khaki;
+}
 .headerText {
  display: flex;
  justify-content: center;
   }
-.btn {
+.header-btn {
   display: flex;
   justify-content: space-around;
   padding: 50px;
+  background:chocolate;
+}
+.btn-all-title, .btn-day-title, .btn-week-title, .btn-month-title {
+  border-radius: 10px;
+  background:aqua;
+  height: 40px;
+  width: 100px;
+  font-size: 24px;
+  cursor: pointer;
+  transition: 0.35s;
+}
+
+.btn-all-title:hover {
+  background:blue;
+  color: black;
+}
+.btn-day-title:hover {
+  background:blue;
+  color: black;
+}.btn-week-title:hover {
+  background:blue;
+  color: black;
+}.btn-month-title:hover {
+  background:blue;
+  color: black;
 }
 .modal {
   position: fixed;
   text-align: center;
   bottom: 0;
   width: 700px;
-  background:cadetblue;
+  background:darkblue;
   margin-left: 380px;
   }
   .modal.open {
     display: block;
-    height: 50%;
+    margin-bottom: 180px;
   }
   .modal.close {
     display: none;
     height: 0;
   }
   .modal-body {
-    display: block;
     height: 100%;
     padding: 100px;
+    border-radius: 10px;
+    overflow: scroll;
   }
 .modal-text {
   width: 500px;
   height: 40px;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 10px;
 }
 .modal-btn {
   height: 45px;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.35s;
+}
+.modal-btn:hover {
+  background: black;
+  color:white;
 }
 .content {
   display: flex;
@@ -45,6 +85,27 @@
   display: flex;
   justify-content: center;
   padding: 30px;
+}
+.inp-content {
+  border-radius: 10px;
+  height: 35px;
+  width: 500px;
+  padding: 10px;
+  font-size: 20px;
+}
+.btn-contentTask {
+  border-radius: 10px;
+  background:greenyellow;
+  height: 40px;
+  width: 250px;
+  font-size: 17px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.35s;
+}
+.btn-contentTask:hover {
+  background: red;
+  color: white;
 }
 .textTask {
   display: flex;
@@ -57,5 +118,48 @@
 }
 .taskTitle {
   border: 1px solid;
-  width: 400px;
+  border-radius: 10px;
+  width: 500px;
+  padding: 20px 30px;
+  margin-top: 10px;
+  font-size: 20px;
+  background: bisque;
+}
+.task-btn-status {
+  border-radius: 10px;
+  font-size: 17px;
+  background: chartreuse;
+  cursor: pointer;
+  transition: 0.35s;
+}
+.task-btn-status:hover {
+  background: black;
+  color: white;
+}
+.task-btn-update {
+  border-radius: 10px;
+  font-size: 17px;
+  height: 40px;
+  background:aliceblue;
+  margin-top: 50px;
+  cursor: pointer;
+  transition: 0.35s;
+}
+.task-btn-update:hover {
+  background: black;
+  color: white;
+}
+
+.task-btn-delete {
+  border-radius: 10px;
+  font-size: 17px;
+  height: 40px;
+  background:cyan;
+  margin-top: 50px;
+  cursor: pointer;
+  transition: 0.35s;
+}
+.task-btn-delete:hover {
+  background: red;
+  color: white;
 }
